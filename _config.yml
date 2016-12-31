@@ -17,3 +17,16 @@ github_username:  pschafhalter
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  guides:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: "_guides"
+      type: "guides"
+    values:
+      layout: "post"

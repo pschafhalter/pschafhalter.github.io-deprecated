@@ -1,0 +1,23 @@
+---
+layout: page
+title: Guides
+permalink: /guides/
+---
+
+<div class="home">
+  {% assign groups = site.guides | group_by: "category" %}
+  <!--| sort: "date" %} -->
+  {% for group in groups %}
+  <h1>{{ group.name }}</h1>
+  <ul class="post-list">
+    {% assign items = group.items | sort: "post_number" %}
+    {% for item in items %}
+    <li style="text-indent: 1em;">
+      <h2>
+        <a class="post-link" href="{{ item.url }}">{{ item.title }}</a>
+      </h2>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+</div>
