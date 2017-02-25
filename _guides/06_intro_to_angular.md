@@ -44,7 +44,8 @@ Set the `body` tag of your app to the owner of an Angular app:
 # Expressions
 Angular automatically substitutes data for expressions within HTML which
 simplifies JavaScript-HTML interaction.
-An expression is written inside double braces: `{{ expression_content }}`.
+An expression is written inside double braces:
+`{% raw %}{{ expression_content }}{% endraw %}`.
 For example, the expression `<p>{{ 5 + 6 }}</p>` results in `<p>11</p>`.
 
 Expressions are flexible; in addition to HTML elements, they can bind
